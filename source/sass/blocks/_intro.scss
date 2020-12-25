@@ -1,0 +1,31 @@
+.intro {
+  @media (min-width: $min-desktop-width) {
+    background-color: $green;
+    background-image: url("../img/intro-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    padding-top: 110px;
+    padding-bottom: 166px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/intro-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $min-desktop-width) {
+      font-size: 72px;
+      //line-height: 30px; непонятная высота строки
+      line-height: 72px;
+      font-weight: 500;
+      color: $white;
+      padding-left: 332px;
+      padding-right: 331px;
+    }
+  }
+}

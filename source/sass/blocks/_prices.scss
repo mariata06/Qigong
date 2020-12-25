@@ -1,0 +1,38 @@
+.prices {
+  @media (min-width: $min-desktop-width) {
+    width: 571px;
+    padding: 0 35px 0 47px;
+    margin-left: auto;
+    border: 1px solid red;
+  }
+
+  ul {
+    @media (min-width: $min-desktop-width) {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      border: 1px solid green;
+      width: 488px;
+    }
+  }
+
+  h3 {
+    @media (min-width: $min-desktop-width) {
+      margin: 0;
+      text-align: center;
+      font-size: 33px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 64px;
+    }
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+}

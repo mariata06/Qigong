@@ -1,0 +1,71 @@
+.schedule {
+  @media (min-width: $min-desktop-width) {
+    width: 570px;
+    padding: 0 35px 0 47px;
+    border: 1px solid red;
+  }
+
+  ul {
+    @media (min-width: $min-desktop-width) {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      border: 1px solid green;
+      width: 488px;
+    }
+  }
+
+  li {
+    @media (min-width: $min-desktop-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  h3 {
+    @media (min-width: $min-desktop-width) {
+      margin: 0;
+      text-align: center;
+      font-size: 33px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 64px;
+    }
+  }
+
+  p {
+    @media (min-width: $min-desktop-width) {
+      margin: 0;
+      font-size: 14px;
+      //line-height: 5px;
+      //font-weight: 300;
+    }
+  }
+
+  time {
+    @media (min-width: $min-desktop-width) {
+      color: $green-light;
+      position: relative;
+      margin-bottom: 5px;
+      font-size: 12px;
+      line-height: 5px;
+      font-weight: 500;
+
+      &::before {
+        content: url("../img/icon-calendar.png");
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  span {
+    color: $green-primary;
+    font-size: 14px;
+    line-height: 5px;
+    font-weight: 800;
+  }
+}

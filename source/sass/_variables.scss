@@ -1,0 +1,17 @@
+//COLOR VARIABLES
+$light-grey: #dfdada; // декоративная обводка элементов
+$black: #000000; // основной цвет шрифта
+$white: #ffffff; // основной цвет сайта
+$green: green; // замещающий цвет фонов
+$green-primary: #136b3a; // цвте заголовков 3-го уровня
+$green-light: #6ac55c;
+// Media queries
+//$max-tablet-width: 1023px;
+$min-tablet-width: 640px;
+//$max-mobile-width: 639px;
+$min-mobile-width: 320px;
+$min-desktop-width: 1280px;
+
+//RETINA VARIABLES
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
