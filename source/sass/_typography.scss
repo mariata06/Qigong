@@ -1,7 +1,6 @@
 //FONTS
-
 @font-face {
-  font-family: "avenir";
+  font-family: "Avenir";
   src: local("avenir black"), local("avenir-black"), url("../fonts/avenir-black.woff2") format("woff2"), url("../fonts/avenir-black.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -9,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "avenir";
+  font-family: "Avenir";
   src: local("avenir light"), local("avenir-light"), url("../fonts/avenir-light.woff2") format("woff2"), url("../fonts/avenir-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -17,7 +16,7 @@
 }
 
 @font-face {
-  font-family: "avenir";
+  font-family: "Avenir";
   src: local("avenir lightoblique"), local("avenir-lightoblique"), url("../fonts/avenir-lightoblique.woff2") format("woff2"), url("../fonts/avenir-lightoblique.woff") format("woff");
   font-weight: 300;
   font-style: normal;
@@ -25,8 +24,16 @@
 }
 
 @font-face {
-  font-family: "avenir";
+  font-family: "Avenir";
   src: local("avenir medium"), local("avenir-medium"), url("../fonts/avenir-medium.woff2") format("woff2"), url("../fonts/avenir-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: local("montserrat medium"), local("montserrat-medium"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;

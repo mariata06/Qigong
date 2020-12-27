@@ -2,36 +2,42 @@
   @media (min-width: $min-desktop-width) {
     display: flex;
     justify-content: space-between;
-    //padding-left: 47px;
-    //padding-right: 47px;
     padding-top: 45px;
     flex-wrap: wrap;
+    padding-bottom: 57px;
   }
 }
 
 .wrapper__button {
   @media (min-width: $min-desktop-width) {
-    //width: 100%;
     border: none;
     outline: none;
     cursor: pointer;
     margin: 0 auto;
-    padding: 20px 28px 20px 27px;
+    padding: 20px 20px 20px 20px;
     margin-top: 50px;
     background-image: linear-gradient(#3fa103 50%, #136b3a 100%);
     border-radius: 10px;
-    font-size: 33px;
+    font-size: 26px;
     line-height: 20px;
     color: $white;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    width: 374px;
+    font-weight: 500;
+    font-family: "Avenir", "Arial", sans-serif;
 
     span {
       width: 100%;
       font-size: 13px;
       margin-top: 10px;
+    }
+
+    &:hover {
+      background-image: linear-gradient(#136b3a 50%, #3fa103 100%);
+      transition: 0.7s ease;
     }
   }
 }

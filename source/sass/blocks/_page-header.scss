@@ -1,39 +1,56 @@
 .page-header {
-  //background-color: $light-grey;
+  padding: 29px 23px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 29px 31px;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    padding: 28px 62px;
+  }
 }
 
 .page-header__search {
+  @media (min-width: $min-tablet-width) {
+    width: 360px;
+    height: 37px;
+  }
+
   @media (min-width: $min-desktop-width) {
     width: 728px;
   }
 
   input {
+    border: 1px solid $light-grey;
+    padding: 0;
+
+    @media (min-width: $min-tablet-width) {
+      width: 100%;
+      height: 100%;
+    }
+
     @media (min-width: $min-desktop-width) {
       width: 100%;
       height: 37px;
-      border: 1px solid $light-grey;
-      padding: 0;
     }
   }
 
   label {
-    @media (min-width: $min-desktop-width) {
-      position: relative;
+    position: relative;
 
-      &::after {
-        position: absolute;
-        content: url("../img/search.png");
-        width: 21px;
-        height: 21px;
-        top: 0;
-        right: 10px;
-        display: block;
-        z-index: 100;
-      }
+    &::after {
+      position: absolute;
+      content: url("../img/search.png");
+      width: 21px;
+      height: 21px;
+      top: 0;
+      right: 10px;
+      display: block;
+      z-index: 100;
     }
   }
 }

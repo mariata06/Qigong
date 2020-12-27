@@ -13,6 +13,7 @@
       margin-bottom: 37px;
       font-size: 33px;
       line-height: 30px;
+      color: $black;
       font-weight: 500;
     }
   }
@@ -20,17 +21,6 @@
 
 .programme__about {
   display: flex;
-  /*
-  @media (min-width: $min-desktop-width) {
-    background-image: url("../img/video-2-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 50%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/video-2-desktop@2x.png");
-    }
-  }*/
 }
 
 .programme__text {

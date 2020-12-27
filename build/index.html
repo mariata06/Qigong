@@ -11,6 +11,7 @@
   <link rel="preload" href="fonts/avenir-light.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/avenir-lightoblique.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/avenir-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,7 +19,7 @@
 <body>
   <div class="page-wrapper">
     <header class="page-header container">
-        <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Логотип сайта Цигун для начинающих">
+        <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Логотип сайта Цигун для начинающих" width="96px" height="74px">
         <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search search-form">
           <label>
             <input tabindex="0" type="text" value="" placeholder="">
@@ -96,9 +97,9 @@
 
       <div class="wrapper container">
         <section class="schedule">
-          <h3>
+          <h2>
             Расписание
-          </h3>
+          </h2>
           <ul class="schedule__list">
             <li>
               <time datetime="2020-06-13 20:00">13 Июн 2020 (Пн)</time>
@@ -106,7 +107,7 @@
             </li>
             <li>
               <time datetime="2020-06-13 20:00">13 Июн 2020 (Пн)</time>
-              <p>20:00 — встреча активных участников Центра 8 перемен с Александром Бутаковым в <span>zoom</span></p>
+              <p>20:00 — встреча активных участников Центра 8 перемен&nbsp;с&nbsp;Александром Бутаковым в <span>zoom</span></p>
             </li>
             <li>
               <time datetime="2020-06-13 20:00">13 Июн 2020 (Пн)</time>
@@ -119,24 +120,27 @@
           </ul>
         </section>
         <section class="prices">
-          <h3>
+          <h2>
             Стоимость
-          </h3>
+          </h2>
           <ul class="prices__list">
             <li>
-              <p><strong>Ретрит в заведнике Ергаки,</strong> 25 июля - 2 августа</p>
+              <h3><strong>Ретрит в заведнике Ергаки,</strong> 25 июля - 2 августа</h3>
               <span>19 000 ₽</span>
             </li>
             <li>
-              <p><strong>Тайцзицюань</strong> абонемент на 2 занятия в неделю</p>
+              <h3><strong>Тайцзицюань</strong></h3>
+              <p>абонемент на 2 занятия в неделю</p>
               <span>2 500 ₽</span>
             </li>
             <li>
-              <p><strong>Цигуна</strong> абонемент на 3 занятия в неделю</p>
+              <h3><strong>Цигуна</strong></h3>
+              <p>абонемент на 3 занятия в неделю</p>
               <span>2 500 ₽</span>
             </li>
             <li>
-              <p><strong>Летние практики в горах Алтая</strong> интенсив в месте силы — Аскате</p>
+              <h3><strong>Летние практики в горах Алтая</strong></h3>
+              <p>интенсив в месте силы — Аскате</p>
               <span>2 500 ₽</span>
             </li>
           </ul>
@@ -144,6 +148,99 @@
         <button class="wrapper__button" type="button">Отправить заявку на курс <span>получить подробное расписание</span></button>
       </div>
 
+      <section class="master container">
+        <h2>Ведущий</h2>
+        <div class="master__about">
+          <h3>Антон Шабаш</h3>
+          <p>массажист, инструктор по цигун в центре умного здоровья 8 перемен</p>
+          <h3>Что дают занятия цигун?</h3>
+          <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями, являющимися следствием хронического напряжения, стресса.</p>
+          <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под контроль практикующего, а не внешних обстоятельств.</p>
+          <p>Следующий популярный запрос – нарушение функций и боли в спине. В виде диагнозов люди приносят заключения об остеохондрозе.</p>
+        </div>
+        <picture>
+          <source type="image/webp" media="(min-width: 1280px)" srcset="img/qigong-master-desktop@1x.webp 1x, img/qigong-master-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 640px)" srcset="img/qigong-master-tablet@1x.webp 1x, img/qigong-master-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/qigong-master-mobile@1x.webp 1x, img/qigong-master-mobile@2x.webp 2x">
+
+          <source srcset="img/qigong-master-desktop@1x.png 1x, img/qigong-master-desktop@2x.png 2x" media="(min-width: 1280px)">
+          <source srcset="img/qigong-master-tablet@1x.png 1x, img/qigong-master-tablet@2x.png 2x" media="(min-width: 640px)">
+          <img src="img/qigong-master-mobile@1x.png" srcset="img/qigong-master-mobile@2x.png 2x" alt="Ведущий Цигуна Антон Шабаш">
+        </picture>
+      </section>
+
+      <section class="participants container">
+        <h2>Друзья, которые принимают участие в курсе</h2>
+        <div class="participants__pictures">
+          <div class="participants__image">
+            <picture>
+              <source type="image/webp" srcset="img/friend-1-mobile@1x.webp 1x, img/friend-1-mobile@2x.webp 2x">
+              <img src="img/friend-1-mobile@1x.png" srcset="img/friend-1-mobile@2x.png 2x" alt="Участник">
+            </picture>
+          </div>
+          <div class="participants__image">
+            <picture>
+              <source type="image/webp" srcset="img/friend-2-mobile@1x.webp 1x, img/friend-2-mobile@2x.webp 2x">
+              <img src="img/friend-2-mobile@1x.png" srcset="img/friend-2-mobile@2x.png 2x" alt="Участник">
+            </picture>
+          </div>
+          <div class="participants__image">
+            <picture>
+              <source type="image/webp" srcset="img/friend-3-mobile@1x.webp 1x, img/friend-3-mobile@2x.webp 2x">
+              <img src="img/friend-3-mobile@1x.png" srcset="img/friend-3-mobile@2x.png 2x" alt="Участник">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="afterwards container">
+        <h2>Продолжение <span>(что дальше после курса)</span></h2>
+        <div class="afterwards__pictures">
+          <a href="#" class="afterwards__events">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/activities-desktop@1x.webp 1x, img/activities-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="img/activities-tablet@1x.webp 1x, img/activities-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/activities-mobile@1x.webp 1x, img/activities-mobile@2x.webp 2x">
+
+                <source srcset="img/activities-desktop@1x.jpg 1x, img/activities-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="img/activities-tablet@1x.png 1x, img/activities-tablet@2x.png 2x" media="(min-width: 640px)">
+                <img src="img/activities-mobile@1x.png" srcset="img/activities-mobile@2x.jpg 2x" alt="Занятия для здоровья и долголетия">
+              </picture>
+              <figcaption>Занятия для здоровья и долголетия</figcaption>
+            </figure>
+          </a>
+          <a href="#" class="afterwards__events">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/skenar-desktop@1x.webp 1x, img/skenar-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="img/skenar-tablet@1x.webp 1x, img/skenar-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/skenar-mobile@1x.webp 1x, img/skenar-mobile@2x.webp 2x">
+
+                <source srcset="img/skenar-desktop@1x.jpg 1x, img/skenar-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="img/skenar-tablet@1x.png 1x, img/skenar-tablet@2x.png 2x" media="(min-width: 640px)">
+                <img src="img/skenar-mobile@1x.png" srcset="img/skenar-mobile@2x.jpg 2x" alt="Технология СКЭНАР: помощь себе и близким">
+              </picture>
+              <figcaption>Технология СКЭНАР: помощь себе и близким</figcaption>
+            </figure>
+          </a>
+          <a href="#" class="afterwards__events">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1280px)" srcset="img/consulting-desktop@1x.webp 1x, img/consulting-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 640px)" srcset="img/consulting-tablet@1x.webp 1x, img/consulting-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/consulting-mobile@1x.webp 1x, img/consulting-mobile@2x.webp 2x">
+
+                <source srcset="img/consulting-desktop@1x.jpg 1x, img/consulting-desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                <source srcset="img/consulting-tablet@1x.png 1x, img/consulting-tablet@2x.png 2x" media="(min-width: 640px)">
+                <img src="img/consulting-mobile@1x.png" srcset="img/consulting-mobile@2x.jpg 2x" alt="Психологическое консультирование в Томске">
+              </picture>
+              <figcaption>Психологическое консультирование в Томске</figcaption>
+            </figure>
+          </a>
+        </div>
+        <button class="afterwards__button" type="button">Отправить заявку на курс <span>получить подробное расписание</span></button>
+      </section>
     </main>
 
     <footer class="page-footer">

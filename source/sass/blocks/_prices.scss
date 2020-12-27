@@ -3,7 +3,7 @@
     width: 571px;
     padding: 0 35px 0 47px;
     margin-left: auto;
-    border: 1px solid red;
+    //border: 1px solid red;
   }
 
   ul {
@@ -11,28 +11,66 @@
       list-style: none;
       padding-left: 0;
       margin: 0;
-      border: 1px solid green;
+      //border: 1px solid green;
       width: 488px;
+      position: relative;
+    }
+
+    &::after {
+      @media (min-width: $min-desktop-width) {
+        content: url("../img/line.svg");
+        display: block;
+        right: 0;
+        top: 0;
+        position: absolute;
+      }
     }
   }
 
-  h3 {
+  h2 {
     @media (min-width: $min-desktop-width) {
       margin: 0;
       text-align: center;
       font-size: 33px;
       line-height: 30px;
       font-weight: 500;
-      margin-bottom: 64px;
+      margin-bottom: 44px;
+      color: $black;
+    }
+  }
+
+  h3 {
+    @media (min-width: $min-desktop-width) {
+      margin: 0;
+      //margin-bottom: 5px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    strong {
+      width: 100%;
+    }
+  }
+
+  li {
+    @media (min-width: $min-desktop-width) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      @media (min-width: $min-desktop-width) {
+        color: $green-light;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 600;
+      }
     }
   }
 
   p {
-    margin: 0;
-    margin-bottom: 5px;
-  }
-
-  li {
-    margin-bottom: 20px;
+    @media (min-width: $min-desktop-width) {
+      margin: 0;
+      margin-bottom: 10px;
+    }
   }
 }
