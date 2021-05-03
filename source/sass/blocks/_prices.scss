@@ -1,48 +1,76 @@
 .prices {
+  padding-top: 20px;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 34px 31px 33px;
+  }
+
   @media (min-width: $min-desktop-width) {
     width: 571px;
     padding: 0 35px 0 47px;
     margin-left: auto;
-    //border: 1px solid red;
   }
 
-  ul {
+  .prices__list {
+    list-style: none;
+    margin: 0;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 54px;
+
+    @media (min-width: $min-tablet-width) {
+      padding: 32px 33px 0 26px;
+    }
+
     @media (min-width: $min-desktop-width) {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-      //border: 1px solid green;
       width: 488px;
-      position: relative;
     }
 
     &::after {
-      @media (min-width: $min-desktop-width) {
+      content: url("../img/line-mobile.svg");
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+      height: 18px;
+      width: 274px;
+
+      @media (min-width: $min-tablet-width) {
         content: url("../img/line.svg");
         display: block;
-        right: 0;
-        top: 0;
+        top: 20px;
+        height: 280px;
         position: absolute;
+        width: 18px;
+      }
+
+      @media (min-width: $min-desktop-width) {
+        top: 0;
       }
     }
   }
 
   h2 {
+    margin: 0;
+    text-align: center;
+    color: $black;
+    margin-bottom: 20px;
+
     @media (min-width: $min-desktop-width) {
-      margin: 0;
-      text-align: center;
-      font-size: 33px;
-      line-height: 30px;
-      font-weight: 500;
+      @include title ($font-33, $height-30, $medium, $black);
       margin-bottom: 44px;
-      color: $black;
     }
   }
 
   h3 {
+    font-weight: 500;
+    margin: 0;
+
+    @media (min-width: $min-tablet-width) {
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
     @media (min-width: $min-desktop-width) {
-      margin: 0;
-      //margin-bottom: 5px;
       font-size: 16px;
       line-height: 20px;
     }
@@ -53,24 +81,27 @@
   }
 
   li {
-    @media (min-width: $min-desktop-width) {
-      margin-bottom: 10px;
+    margin-bottom: 15px;
+
+    @media (min-width: $min-tablet-width) {
+      margin-bottom: 15px;
     }
 
     span {
+      color: $green-light;
+      font-weight: 700;
+
       @media (min-width: $min-desktop-width) {
-        color: $green-light;
-        font-size: 20px;
-        line-height: 20px;
-        font-weight: 600;
+        @include text ($font-20, $height-20, $semi-bold);
       }
     }
   }
 
   p {
-    @media (min-width: $min-desktop-width) {
-      margin: 0;
-      margin-bottom: 10px;
+    margin: 0;
+
+    @media (min-width: $min-tablet-width) {
+      margin-bottom: 5px;
     }
   }
 }

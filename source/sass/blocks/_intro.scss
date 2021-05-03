@@ -1,47 +1,47 @@
 .intro {
+  background-color: $green;
+  background-image: url("../img/intro-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 57px;
+  padding-bottom: 56px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/intro-mobile@2x.png");
+  }
+
   @media (min-width: $min-tablet-width) {
-    background-color: $green;
     background-image: url("../img/intro-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    padding-top: 110px;
-    padding-bottom: 166px;
+    padding-top: 53px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-tablet@2x.png");
-      background-size: cover;
     }
   }
 
   @media (min-width: $min-desktop-width) {
-    background-color: $green;
     background-image: url("../img/intro-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
     padding-top: 110px;
     padding-bottom: 166px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/intro-desktop@2x.png");
-      background-size: cover;
     }
   }
 
   h1 {
+    @include title ($font-26, $height-40, $medium, $white);
     margin: 0 auto;
     text-align: center;
-    color: $white;
-    font-size: 64px;
-    line-height: 64px;
-    font-weight: 500;
+    letter-spacing: 2px;
+
+    @media (min-width: $min-tablet-width) {
+      @include title ($font-64, $height-100, $medium, $white);
+    }
 
     @media (min-width: $min-desktop-width) {
-      font-size: 72px;
-      //line-height: 30px; непонятная высота строки
-      line-height: 72px;
-      font-weight: 500;
+      @include title ($font-72, $height-72, $medium, $white);
       width: 617px;
     }
   }

@@ -1,27 +1,23 @@
 .course {
+  padding: 28px 24px 17px 22px;
+
   @media (min-width: $min-tablet-width) {
     padding: 55px 31px 31px;
   }
 
   @media (min-width: $min-desktop-width) {
-    padding-top: 88px;
-    padding-left: 59px;
-    padding-right: 60px;
-    padding-bottom: 46px;
+    padding: 88px 60px 46px 59px;
   }
 
   h2 {
-    @media (min-width: $min-tablet-width) {
-      margin: 0;
-      text-align: center;
-      color: $black;
-    }
+    @include title ($font-26, $height-30, $medium, $black);
+    margin: 0;
+    text-align: center;
+    margin-bottom: 28px;
 
     @media (min-width: $min-desktop-width) {
+      @include title ($font-33, $height-30, $medium, $black);
       margin-bottom: 37px;
-      font-size: 33px;
-      line-height: 30px;
-      font-weight: 500;
     }
   }
 }
@@ -39,6 +35,8 @@
 }
 
 .course__text {
+  width: 100%;
+
   @media (min-width: $min-tablet-width) {
     width: 100%;
     padding: 25px 80px 15px 16px;
@@ -56,14 +54,20 @@
   }
 
   h3 {
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 800;
     color: $green-primary;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+
+    @media (min-width: $min-tablet-width) {
+      @include title ($font-18, $height-18, $extra-bold, $black);
+      margin-bottom: 24px;
+    }
   }
 
   p {
+    @media (min-width: $min-tablet-width) {
+      font-weight: 300;
+    }
+
     &:first-of-type {
       margin-bottom: 30px;
     }
@@ -75,19 +79,35 @@
 }
 
 .course__video {
-  margin-left: auto;
+  width: 100%;
   position: relative;
+
+  @media (min-width: $min-desktop-width) {
+    margin-left: auto;
+    width: 570px;
+    height: 323px;
+  }
 }
 
 .course__video-button {
-  border: none;
-  outline: none;
-  width: 61px;
-  height: 40px;
-  border-radius: 5px;
   position: absolute;
-  top: 140px;
-  left: 274px;
-  background-color: rgba(78, 141, 111, 0.85);
-  cursor: pointer;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.course__video-link {
+  position: relative;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }

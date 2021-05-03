@@ -41,16 +41,6 @@ img {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-  //color: $black;
-
-  &:hover,
-  &:active {
-    opacity: 0.5;
-  }
-}
-
 .page-wrapper {
   display: flex;
   flex-direction: column;

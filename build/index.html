@@ -19,18 +19,23 @@
 <body>
   <div class="page-wrapper">
     <header class="page-header container">
-        <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Логотип сайта Цигун для начинающих" width="96px" height="74px">
-        <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search search-form">
+      <img src="img/logo-desktop@1x.png" srcset="img/logo-desktop@2x.png 2x" alt="Логотип сайта Цигун для начинающих" width="96px" height="74px">
+      <form action="https://echo.htmlacademy.ru" method="post" class="page-header__search-form search-form">
+        <div class="search-form__content">
           <label>
-            <input tabindex="0" type="text" value="" placeholder="">
+            <input tabindex="0" type="search" value="" placeholder="" aria-label="найти что-нибудь">
           </label>
-        </form>
-        <img src="img/user-desktop@1x.png" srcset="img/user-desktop@2x.png 2x" alt="фото пользователя">
+          <button type="submit" aria-label="поиск" class="search-form__button button">
+            <img width="21" height="21" src="img/icon-search.png" alt="иконка поиска">
+          </button>
+        </div>
+      </form>
+      <img src="img/user-desktop@1x.png" srcset="img/user-desktop@2x.png 2x" alt="фото пользователя">
     </header>
 
     <main class="page-main">
       <section class="intro">
-        <h1>Цигун в Томске для начинающих</h1>
+        <h1>Цигун в Томске для&nbsp;начинающих</h1>
       </section>
 
       <section class="course container">
@@ -40,11 +45,14 @@
         <div class="course__about">
           <div class="course__text">
             <h3>Что дают занятия цигун?</h3>
-            <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями, являющимися следствием хронического напряжения, стресса.</p>
-            <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под контроль практикующего, а не внешних обстоятельств.</p>
+            <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями,
+              являющимися следствием хронического напряжения, стресса.</p>
+            <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению
+              уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под
+              контроль практикующего, а не внешних обстоятельств.</p>
           </div>
           <div class="course__video">
-            <a href="img/video-1-poster-desktop@2x.png">
+            <a href="img/video-1-poster-desktop@2x.png" class="course__video-link">
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/video-1-desktop@1x.webp 1x, img/video-1-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 640px)" srcset="img/video-1-tablet@1x.webp 1x, img/video-1-tablet@2x.webp 2x">
@@ -55,7 +63,7 @@
                 <img src="img/video-1-mobile@1x.png" srcset="img/video-1-mobile@2x.png 2x" alt="Постер видео" class="course__video-image">
               </picture>
             </a>
-            <button class="course__video-button" aria-label="проиграть видео">
+            <button class="course__video-button button button--play" aria-label="проиграть видео">
               <svg width="15" height="16">
                 <use xlink:href="img/sprite.svg#icon-play"></use>
               </svg>
@@ -70,7 +78,7 @@
         </h2>
         <div class="programme__about">
           <div class="programme__video">
-            <a href="img/video-2-poster-desktop@2x.png">
+            <a href="img/video-2-poster-desktop@2x.png" class="programme__video-link">
               <picture>
                 <source type="image/webp" media="(min-width: 1280px)" srcset="img/video-2-desktop@1x.webp 1x, img/video-2-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 640px)" srcset="img/video-2-tablet@1x.webp 1x, img/video-2-tablet@2x.webp 2x">
@@ -81,7 +89,7 @@
                 <img src="img/video-2-mobile@1x.png" srcset="img/video-2-mobile@2x.png 2x" alt="Постер видео" class="programme__video-image">
               </picture>
             </a>
-            <button class="programme__video-button" aria-label="проиграть видео">
+            <button class="programme__video-button button button--play" aria-label="проиграть видео">
               <svg width="15" height="16">
                 <use xlink:href="img/sprite.svg#icon-play"></use>
               </svg>
@@ -89,8 +97,11 @@
           </div>
           <div class="programme__text">
             <h3>Что дают занятия цигун?</h3>
-            <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями, являющимися следствием хронического напряжения, стресса.</p>
-            <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под контроль практикующего, а не внешних обстоятельств.</p>
+            <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями,
+              являющимися следствием хронического напряжения, стресса.</p>
+            <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению
+              уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под
+              контроль практикующего, а не внешних обстоятельств.</p>
           </div>
         </div>
       </section>
@@ -107,7 +118,8 @@
             </li>
             <li>
               <time datetime="2020-06-13 20:00">13 Июн 2020 (Пн)</time>
-              <p>20:00 — встреча активных участников Центра 8 перемен&nbsp;с&nbsp;Александром Бутаковым в <span>zoom</span></p>
+              <p>20:00 — встреча активных участников Центра 8 перемен&nbsp;с&nbsp;Александром Бутаковым в
+                <span>zoom</span></p>
             </li>
             <li>
               <time datetime="2020-06-13 20:00">13 Июн 2020 (Пн)</time>
@@ -145,7 +157,8 @@
             </li>
           </ul>
         </section>
-        <button class="wrapper__button" type="button">Отправить заявку на курс <span>получить подробное расписание</span></button>
+        <button class="wrapper__button button button--green" type="button">Отправить заявку на курс <span>получить подробное
+            расписание</span></button>
       </div>
 
       <section class="master container">
@@ -154,19 +167,24 @@
           <h3>Антон Шабаш</h3>
           <p>массажист, инструктор по цигун в центре умного здоровья 8 перемен</p>
           <h3>Что дают занятия цигун?</h3>
-          <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями, являющимися следствием хронического напряжения, стресса.</p>
-          <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под контроль практикующего, а не внешних обстоятельств.</p>
-          <p>Следующий популярный запрос – нарушение функций и боли в спине. В виде диагнозов люди приносят заключения об остеохондрозе.</p>
+          <p>На цигун чаще всего приходят люди, столкнувшиеся с накопившимися неопределенными недомоганиями, являющимися
+            следствием хронического напряжения, стресса.</p>
+          <p>Занятия цигун помогают дышать свободнее, выравнивать эмоциональное состояние, что способствует снижению
+            уровня общих стрессорных реакций организма. Состояние постепенно улучшается, все более переходя под контроль
+            практикующего, а не внешних обстоятельств.</p>
+          <p>Следующий популярный запрос – нарушение функций и боли в спине. В виде диагнозов люди приносят заключения
+            об остеохондрозе.</p>
         </div>
-        <picture>
-          <source type="image/webp" media="(min-width: 1280px)" srcset="img/qigong-master-desktop@1x.webp 1x, img/qigong-master-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 640px)" srcset="img/qigong-master-tablet@1x.webp 1x, img/qigong-master-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/qigong-master-mobile@1x.webp 1x, img/qigong-master-mobile@2x.webp 2x">
+        <div class="master__photo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1280px)" srcset="img/qigong-master-desktop@1x.webp 1x, img/qigong-master-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="img/qigong-master-mobile@1x.webp 1x, img/qigong-master-mobile@2x.webp 2x">
 
-          <source srcset="img/qigong-master-desktop@1x.png 1x, img/qigong-master-desktop@2x.png 2x" media="(min-width: 1280px)">
-          <source srcset="img/qigong-master-tablet@1x.png 1x, img/qigong-master-tablet@2x.png 2x" media="(min-width: 640px)">
-          <img src="img/qigong-master-mobile@1x.png" srcset="img/qigong-master-mobile@2x.png 2x" alt="Ведущий Цигуна Антон Шабаш">
-        </picture>
+            <source srcset="img/qigong-master-desktop@1x.png 1x, img/qigong-master-desktop@2x.png 2x" media="(min-width: 1280px)">
+            <source srcset="img/qigong-master-tablet@1x.png 1x, img/qigong-master-tablet@2x.png 2x" media="(min-width: 640px)">
+            <img src="img/qigong-master-mobile@1x.png" srcset="img/qigong-master-mobile@2x.png 2x" alt="Ведущий Цигуна Антон Шабаш">
+          </picture>
+        </div>
       </section>
 
       <section class="participants container">
@@ -239,7 +257,8 @@
             </figure>
           </a>
         </div>
-        <button class="afterwards__button" type="button">Отправить заявку на курс <span>получить подробное расписание</span></button>
+        <button class="afterwards__button button button--green" type="button">Отправить заявку на курс <span>получить подробное
+            расписание</span></button>
       </section>
     </main>
 

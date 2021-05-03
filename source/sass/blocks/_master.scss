@@ -1,47 +1,59 @@
 .master {
+  padding: 23px;
+  padding-bottom: 22px;
+
+  @media (min-width: $min-tablet-width) {
+    padding: 34px 33px 53px;
+  }
+
   @media (min-width: $min-desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 57px;
     justify-content: space-between;
-    padding-bottom: 58px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 57px 60px 58px;
   }
 
   h2 {
-    @media (min-width: $min-desktop-width) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $black;
+
+    @media (min-width: $min-tablet-width) {
       width: 100%;
       text-align: center;
-      margin: 0;
+    }
+
+    @media (min-width: $min-desktop-width) {
+      @include title ($font-33, $height-30, $medium, $black);
+      padding-top: 57px;
       margin-bottom: 37px;
-      font-size: 33px;
-      line-height: 30px;
-      font-weight: 500;
-      color: $black;
     }
   }
 
   .master__about {
     @media (min-width: $min-desktop-width) {
       width: 767px;
-      padding-top: 27px;
-      padding-right: 80px;
-      padding-bottom: 10px;
-      padding-left: 31px;
+      padding: 27px 80px 10px 31px;
     }
   }
 
   h3 {
+    @include title ($font-18, $height-18, $bold, $green-primary);
     margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    color: $green-primary;
     margin-bottom: 10px;
   }
 
   p {
+    &:last-of-type {
+      display: none;
+
+      @media (min-width: $min-desktop-width) {
+        display: block;
+      }
+    }
+
     @media (min-width: $min-desktop-width) {
       margin: 0;
       margin-bottom: 30px;
@@ -56,5 +68,15 @@
         color: $black;
       }
     }
+  }
+}
+
+.master__photo {
+  @media (min-width: $min-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $min-desktop-width) {
+    display: block;
   }
 }
