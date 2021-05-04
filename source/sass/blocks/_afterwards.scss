@@ -69,7 +69,7 @@
         margin: 0 auto;
       }
 
-      @media (min-width: $min-desktop-width) {
+      @media (min-width: 881px) {
         margin: 0;
       }
     }
@@ -107,15 +107,30 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @media (min-width: $min-tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+  @media (min-width: 641px) {
+    justify-content: space-around;
+  }
+
+
+  @media (min-width: $min-desktop-width) {
     justify-content: space-between;
+  }
+
+  .afterwards__events,
+  figure,
+  img {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: $min-tablet-width) {
+      width: unset;
+    }
   }
 }
 
 .afterwards__button {
   margin-bottom: 52px;
+  width: 100%;
 
   &:hover,
   &:focus {

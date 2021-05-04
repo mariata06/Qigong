@@ -27,13 +27,15 @@
     &::after {
       content: url("../img/line-mobile.svg");
       position: absolute;
-      right: 0;
+      left: 0;
       bottom: -30px;
       height: 18px;
       width: 274px;
 
       @media (min-width: $min-tablet-width) {
         content: url("../img/line.svg");
+        left: unset;
+        right: 0;
         top: 20px;
         height: 280px;
         width: 18px;

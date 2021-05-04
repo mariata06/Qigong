@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 
   @media (min-width: $min-tablet-width) {
     flex-wrap: nowrap;
@@ -21,7 +22,8 @@
   order: 3;
 
   @media (min-width: $min-tablet-width) {
-    width: 360px;
+    margin-left: 19.5px;
+    margin-right: 45.5px;
     height: 37px;
     order: unset;
   }

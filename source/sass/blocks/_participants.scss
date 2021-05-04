@@ -58,14 +58,17 @@
     margin-bottom: 0;
   }
 
+  &::before {
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 102px;
+    z-index: 10;
+  }
+
   &:first-of-type {
     &::before {
       content: url("../img/1.png");
-      display: block;
-      position: absolute;
-      width: 55px;
-      height: 102px;
-      z-index: 10;
       top: 50%;
       right: 25%;
       transform: translateY(-50%);
@@ -76,11 +79,6 @@
   &:nth-child(2n) {
     &::before {
       content: url("../img/2.png");
-      display: block;
-      position: absolute;
-      width: 55px;
-      height: 102px;
-      z-index: 10;
       top: 50%;
       right: 35%;
       transform: translateY(-50%);
@@ -91,11 +89,6 @@
   &:last-of-type {
     &::before {
       content: url("../img/3.png");
-      display: block;
-      position: absolute;
-      width: 55px;
-      height: 102px;
-      z-index: 10;
       top: 70%;
       right: 30%;
       transform: translateY(-70%);
