@@ -1,5 +1,5 @@
-# Jewellery-shop
-Jewellery shop
+# Qigong
+qigong for beginners
 
 Установка и сборка проекта
 1. Сначала надо скачать папку с проектом с гитхаба
