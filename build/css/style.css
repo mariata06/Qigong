@@ -124,7 +124,7 @@ img {
       min-width: 640px; } }
   @media (min-width: 1280px) {
     .container {
-      min-width: 1280px; } }
+      width: 1280px; } }
 
 .intro {
   background-color: green;
